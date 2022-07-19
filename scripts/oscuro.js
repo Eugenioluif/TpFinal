@@ -9,6 +9,7 @@ if (configlocal === 'dark') {
     btn.innerHTML='<img src="./media/sol.png" />'
 } else if (configlocal === 'light') {
     document.body.classList.toggle('light')
+    btn.innerHTML='<img src="./media/luna.png" />'
 }
 
 // funcion de cambiar de color
