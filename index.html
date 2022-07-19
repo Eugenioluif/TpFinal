@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserva de Vuelos y paquetes aereos">
+    <meta name="keywords" content="VUELOS, RESERVAR VUELO, RESERVAR PAQUETES, VIAJE, DESTINO, PROMOS VIAJES">
+    <link rel="shortcut icon" href="./media/avionlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Viajando</title>
+</head>
+<body>
+  <main>
+    <!-- Navbar -->
+    <div class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a href="http://127.0.0.1:5500/index.html"><img src="./media/avionlogo.png" alt="logo de pagina" width="130rem">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav m-auto gap-5 mb-4 mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contenedorDestinos" id="iconos">
+                  <img src="./media/IconoAvion.png" alt="icono avion">
+                  <p>Vuelos</p>
+                </a>
+              </li>
+                <a class="nav-link active" href="#contenedorDestinosPaquetes"><img src="./media/paqueteIcon.png" alt="icono paquete">
+                  <p>Paquetes</p></a>
+              </li>
+              <li class="nav-item">
+                <button id="boton-carrito">
+                  <span id="contadorCarrito">0</span>
+                  <img src="./media/carrito.png" alt="icono carrito" width="110%">
+                </button>  
+              </li>
+            </ul>
+            <button id="botonTema">
+              <p id="nombreBoton">Dark</p>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="titulopagina">
+        <h2>Venta de pasajes Aereos</h2>
+    </div>
+      <!-- carousel imagen de fondo -->
+    <div class="carousel">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./media/bangkokbanner.jpg" class="d-block w-100" alt="banner bangkok">
+          </div>
+          <div class="carousel-item">
+            <img src="./media/banneregip.jpg" class="d-block w-100" alt="banner egipto">
+          </div>
+          <div class="carousel-item">
+            <img src="./media/riobanner.jpg" class="d-block w-100" alt="banner rio de janeiro">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <!-- vuelos -->
+      <h3 class="tituloDestinos">Europa</h3>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-10">
+            <div id="contenedorDestinos">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- America-->
+      <h3 class="tituloDestinos">America</h3>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-10">
+            <div id="contenedorDestinosAmerica">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Africa-->
+      <h3 class="tituloDestinos">Africa</h3>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-10">
+            <div id="contenedorDestinosAfrica">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- paquetes-->
+      <h3 class="tituloDestinos">Paquetes</h3>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-10">
+            <div id="contenedorDestinosPaquetes">
+            </div>
+          </div>
+        </div>
+      </div>   
+    
+      <!-- preguntas frecuentes -->
+        <div class="page">
+            <div class="reglas">
+                <h3>Preguntas Frecuentes</h3>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Compras
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Tenés que seleccionar el viaje que deseas adquirir. 
+                          Luego clic en el botón Reservar y podés acceder como cliente (si ya tenés cuenta) o crear un cliente nuevo completando los datos. 
+                          Por último, se te asignará un número de Ticket y se mostrarán los detalles del mismo. También enviaremos un mail a tu correo electrónico registrado con los datos del pedido.
+                        </div>
+                    </div>
+                  </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Forma de Pago
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Contamos con dos formas de pago: depósito/transferencia bancaria, con la cual se obtiene el precio especial, o con MercadoPago (Tarjetas online, PagoFácil) podés abonar en cuotas.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Facturacion
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Una vez que abono la reserva, se envia a su dirección de correo electrónico la factura correspondiente.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Depósito
+                          </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Una vez se realiza la reserva, le brindamos los datos del CBU.
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+    </main> 
+    
+    <!-- carro de compra -->
+    <div class="modal-contenedor" id="contenedorCarro">
+      <div class="modal-carrito">
+            <div >
+              <h3>Carrito</h3>
+              <a href="" id="carritoCerrar" >X</a>
+            </div>
+            <div id="carritocontenedor"> 
+            </div>
+            <div class="botonDelCarrito">
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <button id="vaciarcarro" class="boton-agregar">Vaciar carrito</button>
+                <button id="continuarAform" class="boton-agregar">continuar</button>
+            </div>
+      </div>
+    </div>
+    
+    <!-- footer -->
+    <footer class="foot">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h4>Soporte</h4>
+                <h6>Ayuda</h6>
+                <h6>Contacto</h6>
+                <h6>Terminos y Condiciones</h6>
+              </div>
+              <div class="col">
+                <h4>Sobre</h4>
+                <h6>Quines Somos</h6>
+                <h6>Promocionar</h6>
+              </div>
+              <div class="col">
+                <h4>Redes</h4>
+                  <a href="">Facebook</a>
+                  <a href="">Instagram</a>
+                  <a href="">Whatsapp</a>
+              </div>
+            </div>
+          </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./scripts/destinos.js"></script>
+    <script src="./scripts/elementos.js"></script>
+    <script src="./scripts/oscuro.js"></script>
+    <script src="./scripts/modal.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

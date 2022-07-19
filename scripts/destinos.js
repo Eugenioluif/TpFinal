@@ -1,0 +1,222 @@
+/* 
+*Este script podemos ver e ir agregando lugares que se van a ir agregando al HTML. Asignando por ID, lugar, precio e imagen.
+*/
+
+let todosLosDestinos = [
+    {
+        id:1,
+        lugar:"PARIS",
+        precio:121000,
+        img:"./media/parisimg.jpg",
+        cantidad:1,
+        modo: "Ida y Vuelta",
+        zona: "EUROPA", alt: "PARIS"
+    },
+
+    {
+        id:2,
+        lugar:"MADRID",
+        precio:150500,
+        img:"./media/madridimg.jpg", 
+        cantidad:1,modo: "Ida y Vuelta",
+        zona: "EUROPA", 
+        alt: "MADRID"
+    },
+
+    {
+        id:3,
+        lugar:"MENDOZA",
+        precio:9000,
+        img:"./media/mendoimg.jpg",
+        cantidad:1,
+        modo: "Ida y Vuelta",
+        zona: "AMERICA", 
+        alt: "MENDOZA"
+    },
+
+    {
+        id:4,
+        lugar:"SALTA",
+        precio:10500,
+        img:"./media/saltaimg.jpg", 
+        cantidad:1,
+        modo: "Ida y Vuelta",
+        zona: "AMERICA", 
+        alt: "SALTA"
+    },
+
+    {
+        id:5,
+        lugar:"CHILE",
+        precio:30500,
+        img:"./media/chileimg.jpg",
+        cantidad:1,
+        modo: "Ida y Vuelta",
+        zona: "AMERICA", 
+        alt: "CHILE"
+    },
+
+    {
+        id:6,
+        lugar:"LIMA",
+        precio:42000,
+        img:"./media/limaimg.jfif", 
+        cantidad:1,
+        modo: "Ida y Vuelta",
+        zona: "AMERICA", 
+        alt: "LIMA"
+    },
+
+    {
+        id:7,
+        lugar:"BARCELONA",
+        precio:120500,
+        img:"./media/barcelonaimg.jpg", 
+        cantidad:1,
+        modo: "Ida y Vuelta",
+        zona: "EUROPA", 
+        alt: "BARCELONA"
+    },
+
+    {
+        id:8,
+        lugar:"CANCUN",
+        precio:135500,
+        img:"./media/cancunimg.jpg", 
+        cantidad:1,
+        modo: "Ida y Vuelta",
+        zona: "AMERICA", 
+        alt: "CANCUN"
+    },
+
+    {
+        id:9,
+        lugar:"ROMA",
+        precio:170000,
+        img:"./media/romaimg.jpg", 
+        cantidad:1,
+        modo: "Ida y Vuelta",
+        zona: "EUROPA", 
+        alt: "ROMA"
+    },
+
+    {
+        id:10,
+        lugar:"EGIPTO",
+        precio:210500,
+        img:"./media/piramidesegipto.jpg", 
+        cantidad:1,
+        modo: "Ida y Vuelta",
+        zona: "AFRICA",
+        alt: "EGIPTO"},
+
+    {
+        id:11,
+        lugar:"VENECIA",
+        precio: 225000,
+        img:"./media/venecia.jfif",
+        modo: "Ida y Vuelta",
+        cantidad:1,
+        zona: "EUROPA", 
+        alt: "VENECIA"
+    },
+
+    {
+        id:12,
+        lugar:"TURQUIA",
+        precio: 160000,
+        img:"./media/turquia.jfif",
+        modo: "Ida y Vuelta",
+        cantidad:1,
+        zona: "EUROPA", 
+        alt: "TURQUIA"
+    },
+
+    {
+        id:13,
+        lugar:"DISNEY",
+        precio: 160000,
+        img:"./media/dinsey.jfif",
+        modo: "Ida y Vuelta",
+        cantidad:1,
+        zona: "AMERICA", 
+        alt: "DISNEY"
+    },
+
+    {
+        id:14,
+        lugar:"MIAMI",
+        precio: 140000,
+        img:"./media/miami.jpg",
+        modo: "Ida y Vuelta",
+        cantidad:1,
+        zona: "AMERICA", 
+        alt: "MIAMI"
+    },
+
+    {
+        id:15,
+        lugar:"MEXICO",
+        precio: 125000,
+        img:"./media/cancun.jpg",
+        modo: "Ida y Vuelta",
+        cantidad:1,
+        zona: "AMERICA", 
+        alt: "MEXICO"
+    },
+
+    {
+        id:16,
+        lugar:"INGLATERRA",
+        precio: 210000,
+        img:"./media/inglaterra.jpg",
+        modo: "Ida y Vuelta",
+        cantidad:1,
+        zona: "EUROPA", 
+        alt: "INGLATERRA"
+    },
+
+    {
+        id:17,
+        lugar:"FRANCIA-ITALIA",
+        precio: 185000,
+        img:"./media/francia-italia.jpg",
+        modo: "Ida y Vuelta",
+        cantidad:1,
+        zona: "Paquete", 
+        alt: "FRANCIA-ITALIA"
+    },
+
+    {
+        id:18,
+        lugar:"QATAR-DUBAI",
+        precio: 165000,
+        img:"./media/qatar-dubai.jpg",
+        modo: "Ida y Vuelta",
+        cantidad:1,
+        zona: "PAQUETE", 
+        alt: "QATAR-DUBAI"
+    },
+
+    {
+        id:19,
+        lugar:"SALTA-JUJUY",
+        precio: 750000,
+        img:"./media/salta-jujuy.jfif",
+        modo: "Ida y Vuelta",
+        cantidad:1,
+        zona: "PAQUETE", 
+        alt: "SALTA-JUJUY"
+    },
+    
+    {
+        id:20,
+        lugar:"BARILOCHE",
+        precio: 80000,
+        img:"./media/bariloche.jpg",
+        modo: "Ida y Vuelta",
+        cantidad:1,
+        zona: "AMERICA", 
+        alt: "BARILOCHE"
+    },
+]

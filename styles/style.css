@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1fcfc !important;
+}
+
+h2,h3{
+    color: black;
+}
+
+/* NavBar */
+
+.header{
+    background-color: white;  
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
+    margin-top: -7rem;
+}
+
+.navbar-nav a{
+    font-size: 1rem;
+}
+
+#botonTema{
+    border-radius: 20%;
+    width: 3rem;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+#botonTema p{
+    margin-top: 5px;
+}
+
+/* dark-light */
+
+body.dark{
+    background-color: rgb(47,47,47) !important;
+}
+
+body.dark .header{
+    background-color: rgb(175, 175, 175);
+}
+
+body.dark .header-confirmacion{
+    background-color: rgb(175, 175, 175);
+}
+
+body.dark .foot{
+    background-color: rgb(175, 175, 175);
+}
+
+body.dark .header p{
+    color: black;
+}
+
+body.dark .card{
+    background-color: rgb(47,47,47);
+    border: solid white 1px;
+}
+
+body.dark h3{
+    color: white;
+}
+
+body.dark p{
+    color: white;
+}
+
+body.dark .carousel{
+    opacity: 0.9;
+}
+
+body.dark .datos{
+    background-color: rgb(47,47,47);
+}
+
+body.dark .datos label{
+    color: white;
+}
+
+body.dark .datos h2{
+    color: white;
+}
+
+body.dark .header-confirmacion p{
+    color: black;
+}
+
+body.dark #botonTema{
+    background-color: rgb(255, 230, 0);
+    font-weight: bold;
+}
+
+body.dark .modal-carrito{
+    background-color: rgb(47,47,47);
+}
+
+body.dark #carritoCerrar{
+    background-color: rgb(47,47,47);
+}
+
+/* carro */
+
+#boton-carrito {
+    border: none;
+    font-size: 23px;
+    background-color: transparent
+}
+
+#boton-carrito img{
+    margin-top: -1.5rem;
+}
+
+#contadorCarrito{
+    color: royalblue;
+}
+
+#carritoCerrar{
+    text-decoration: none;
+    border: solid 2px black;
+    font-weight:bold;
+    
+}
+
+.boton-eliminar{
+    background-color: rgb(204, 0, 0);
+    width: 4rem;
+    border: solid 1px red;
+    border-radius: 5px;
+    color: white;
+}
+
+.botonDelCarrito{
+    text-align: center;
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: royalblue;
+    padding-bottom: 5px;
+}
+#carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 25px;
+    color: red;
+    border: none;
+    background-color: white;
+}
+
+#contadorCarrito{
+    position: absolute;
+    width: 33px;
+    height: 34px;
+    margin-left: 4rem;
+    margin-top: -2rem;
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: rgba(255, 0, 0, 0.829);
+    -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+}
+
+.carousel{
+    margin-top: 7rem;
+}
+
+/* titulo */
+
+.titulopagina{
+    position: absolute;
+    z-index: 9;
+    align-items: center;
+    margin-top: 15rem;
+    margin-left: 25rem;
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    width: 50rem;
+}
+
+.titulopagina h2{
+    padding: 15px;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+.vuelo{
+    color: white;
+    font-size: 3rem;
+}
+
+/* card de destinos */
+
+.tituloDestinos{
+    font-size: 3rem;
+    margin-left: 50%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#contenedorDestinos{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+#contenedorDestinosAmerica{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+#contenedorDestinosAfrica{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+#contenedorDestinosPaquetes{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.card{
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    align-items: center; 
+    padding-bottom: 0.5rem; 
+}
+
+.card:hover{
+    box-shadow: -2px 6px 18px -1px rgba(0,0,0,0.52);
+    -webkit-box-shadow: -2px 6px 18px -1px rgba(0,0,0,0.52);
+    -moz-box-shadow: -2px 6px 18px -1px rgba(0,0,0,0.52);
+}
+
+.card h3{
+    text-align: center;
+}
+
+.card p{
+    font-size: 15px;
+}
+
+.card img{
+    width: 370px;
+    height: 250px;
+    transition: 0.5s;
+    opacity: 0.8;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.card img:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.precioDestino{
+	font-weight: bold;
+}
+
+.boton-agregar{
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.boton-agregar:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.boton-agregar:active {
+	position:relative;
+	top:1px;
+}
+
+/* preguntas frecuentes */
+
+.page{
+    padding:3rem 10rem 3rem 10rem;
+}
+
+.reglas{
+    margin-bottom: 4rem;
+}
+
+.reglas h3{
+    color: black;
+}
+
+/* footer */
+
+.foot{
+    background-color: white;
+    padding-top: 1.5rem;
+}
+
+/*hoja confirmacion*/
+
+.header-confirmacion{
+    background-color: white;  
+    position: fixed;
+    z-index: 15;
+    margin-top: -10rem;
+    width: 100%;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
+}
+
+.datos{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  1fr;
+    align-items: center;
+    justify-items: center ;
+    border: solid 2px white;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 10rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-bottom: 3rem;
+}
+
+.datoPasajero{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.listadoDatos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.infoPrecio{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.infoPrecio h1{
+    margin-bottom: 4rem;
+}
+
+.infoPrecio h2{
+    margin-bottom: 3rem;
+}
+
+.infoPrecio h4{
+    border-bottom: solid 1px black;
+    margin-bottom: 3rem;
+}
+
+.precioSinImp{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0px 2px 12px rgba(255, 255, 255, 0.70);
+}
+
+/* formulario */
+
+.form-input{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.invalido{
+    border: 2px solid red;
+}
+
+.oculto{
+    display: none;
+}
+
+#btnVolver{
+    margin-left: 40%;
+    margin-top: 0.5rem;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 780px)
+{
+
+.header{
+    background-color: white;  
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
+    margin-top: -7rem;
+    }
+
+#botonTema{
+    border-radius: 20%;
+    width: 3rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#iconos{
+    margin-top: 1rem;
+}
+
+.tituloDestinos{
+    font-size: 3rem;
+    margin-left: 35%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#contenedorDestinos
+    {
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 1rem;
+        justify-content: center;
+    }
+
+#contenedorDestinosAmerica{
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 1rem;
+        justify-content: center;
+}
+    
+#contenedorDestinosAfrica{
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 1rem;
+        justify-content: center;
+}
+    
+#contenedorDestinosPaquetes{
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1rem;
+        justify-content: center;
+}
+
+#carouselExampleSlidesOnly img{
+    height: 16rem;
+}
+
+.page{
+    padding:0.5rem 2rem 0.5rem 2rem;
+}
+
+.titulopagina{
+    position: absolute;
+    z-index: 10;
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: 0.1rem;
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    width: auto;
+    
+    margin-right: auto;
+}
+
+.titulopagina h2{
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.datos{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows:  1fr;
+    align-items: center;
+    justify-items: center ;
+    border: solid 2px white;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+
+}
+
+
